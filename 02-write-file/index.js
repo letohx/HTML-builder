@@ -13,4 +13,4 @@ readLine.on('line', (input) => {
 })
 
 process.on('exit', () => stdout.write('See you again!'));
-process.on('SIGINT', exit);
+process.on('SIGINT', () => exit());
